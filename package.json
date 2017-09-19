@@ -1,0 +1,22 @@
+{
+  "name": "graphql-awesome-meetups",
+  "version": "1.0.0",
+  "description": "GraphQL example",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js"
+  },
+  "author": "Wesley de Souza <me@wesley.so>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "dependencies": {
+    "apollo-server-express": "^1.1.2",
+    "express": "^4.15.4",
+    "graphql": "^0.10.1",
+    "lowdb": "^1.0.0"
+  }
+}
