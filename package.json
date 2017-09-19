@@ -10,13 +10,19 @@
   },
   "author": "Wesley de Souza <me@wesley.so>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WesleydeSouza/graphql-awesome-meetups"
+  },
   "devDependencies": {
     "concurrently": "^3.5.0"
   },
   "dependencies": {
     "apollo-server-express": "^1.1.2",
+    "body-parser": "^1.18.1",
     "express": "^4.15.4",
     "graphql": "^0.10.1",
-    "lowdb": "^1.0.0"
+    "graphql-tools": "^1.2.2",
+    "lodash": "^4.17.4"
   }
 }

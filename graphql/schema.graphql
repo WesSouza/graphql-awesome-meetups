@@ -1,0 +1,22 @@
+type Meetup {
+    id: ID!
+    name: String!
+    description: String!
+    price: Int!
+    priceFormatted: String!
+    isAvailable: Boolean!
+}
+
+type Wishlist {
+    meetups: [Meetup!]!
+}
+
+type RootQuery {
+    meetup(id: ID!): Meetup
+    meetups: [Meetup!]!
+    wishlist: Wishlist
+}
+
+schema {
+    query: RootQuery
+}
