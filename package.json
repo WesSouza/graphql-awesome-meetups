@@ -2,10 +2,10 @@
   "name": "graphql-awesome-meetups",
   "version": "1.0.0",
   "description": "GraphQL example",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server.js",
+    "server": "node server/server.js",
     "client": "node start-client.js"
   },
   "author": "Wesley de Souza <me@wesley.so>",
