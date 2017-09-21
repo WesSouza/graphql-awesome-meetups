@@ -1,0 +1,51 @@
+.HeaderWishlist {
+  position: relative;
+}
+
+.HeaderWishlist-button {
+  appearance: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.HeaderWishlist-list {
+  position: absolute;
+  right: -20px;
+  width: 250px;
+  margin: 10px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.HeaderWishlist-list::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 40px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.HeaderWishlist-list,
+.HeaderWishlist-list a {
+  color: #0076BA;
+  text-decoration: underline;
+}
+
+.HeaderWishlist-listItem:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.HeaderWishlist-link {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

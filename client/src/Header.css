@@ -1,0 +1,17 @@
+.Header {
+  display: flex;
+  background-color: #FA5A73;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.Header,
+.Header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Header-title {
+  flex-grow: 1;
+  margin: 0;
+}

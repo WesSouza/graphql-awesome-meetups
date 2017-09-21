@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
 import './App.css';
+
+import Header from './Header';
+import MeetupList from './MeetupList';
+import Meetup from './Meetup';
+import Wishlist from './Wishlist';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          Something cool will be added here.
-        </p>
+      <div className='App'>
+        <Header />
+        <main className='App-content'>
+          <Route path='/' exact component={ MeetupList } />
+          <Route path='/meetup/:id' exact component={ Meetup } />
+          <Route path='/wishlist' exact component={ Wishlist } />
+        </main>
       </div>
     );
   }
