@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Header.css';
 
-// import HeaderWishlist from './HeaderWishlist';
+import HeaderWishlist from './HeaderWishlist';
 
 class Header extends Component {
   render() {
@@ -14,6 +14,7 @@ class Header extends Component {
             Awesome Meetup Website
           </Link>
         </h1>
+        <HeaderWishlist />
       </nav>
     );
   }

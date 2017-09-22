@@ -30,13 +30,7 @@ class HeaderWishlist extends Component {
       wishlistOpen,
     } = this.state;
 
-    const wishlist = {
-      meetups: [
-        { id: '1', name: 'Fake Meetup 1' },
-        { id: '2', name: 'Fake Meetup 2' },
-        { id: '3', name: 'Fake Meetup 3' },
-      ],
-    };
+    const wishlist = this.props.data.wishlist;
 
     if (!wishlistOpen || !wishlist) {
       return null;
@@ -64,4 +58,15 @@ class HeaderWishlist extends Component {
   }
 }
 
-export default HeaderWishlist;
+const WishlistQuery = gql`{
+  wishlist {
+    meetups {
+      id
+      name
+    }
+  }
+}`;
+
+const withData = graphql(WishlistQuery);
+
+export default withData(HeaderWishlist);
